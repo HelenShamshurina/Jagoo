@@ -1,179 +1,417 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220624232409">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «Jagoo»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «Jagoo»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo"><img src="img/logo/Logo.svg" alt=""></a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Desitnations</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Hotels</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Flights</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Bookings</a></li>
+						</ul>
+						<div class="menu__active active-header">
+							<button type="button" class="active-header__login">Login</button>
+							<button type="button" class="active-header__sing">Sign up</button>
+							<select name="form[]" data-class-modif="lang">
+								<option value="1" selected>EN</option>
+								<option value="2">UA</option>
+								<option value="3">DH</option>
+							</select>
+						</div>
+
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__content">
+						<div class="main__title">Best Destinations around the world</div>
+						<h1 class="main__header">Travel, <span><span>enjoy</span></span>
+							and live a new
+							and full life</h1>
+						<div class="main__text">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</div>
+						<div class="main__active ">
+							<a href="" class="main__button">Find out more</a>
+							<button type="button" data-popup="#video" data-popup-youtube="M7lc1UVf-VE" class="main__play _icon-Play">Play Demo</button>
+						</div>
+					</div>
+					<div class="main__picture picture-main">
+						<div data-prlx-mouse class="picture-main__plane picture-main__plane_1">
+							<img src="img/main/plane.svg" alt="">
+						</div>
+						<div data-prlx-mouse class="picture-main__plane picture-main__plane_2">
+							<img src="img/main/plane.svg" alt="">
+						</div>
+						<div data-prlx-mouse class="picture-main__girl">
+							<picture><source srcset="img/main/girl-2.webp" type="image/webp"><img src="img/main/girl-2.png" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__service service">
+				<div class="service__container">
+					<div class="service__header header-block">
+						<div class="header-block__lable">CATEGORY</div>
+						<h2 class="header-block__header">We Offer Best Services</h2>
+					</div>
+					<div class="service__items">
+						<div class="service__item item-service">
+							<div class="item-service__icon">
+								<img src="img/service/01.svg" alt="icon">
+							</div>
+							<div class="item-service__title">Calculated Weather </div>
+							<div class="item-service__text">Built Wicket longer admire do barton vanity itself do in it.</div>
+						</div>
+						<div class="service__item item-service">
+							<div class="item-service__icon">
+								<img src="img/service/02.svg" alt="icon">
+							</div>
+							<div class="item-service__title">Best Flights</div>
+							<div class="item-service__text">Engrossed listening. Park gate sell they west hard for the.</div>
+						</div>
+						<div class="service__item item-service">
+							<div class="item-service__icon">
+								<img src="img/service/03.svg" alt="icon">
+							</div>
+							<div class="item-service__title">Local Events</div>
+							<div class="item-service__text">Barton vanity itself do in it. Preferd to men it engrossed listening. </div>
+						</div>
+						<div class="service__item item-service">
+							<div class="item-service__icon">
+								<img src="img/service/04.svg" alt="icon">
+							</div>
+							<div class="item-service__title">Customization</div>
+							<div class="item-service__text">We deliver outsourced
+								aviation services for
+								military customers</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__destination destination">
+				<div class="destination__container">
+					<div class="destination__header header-block">
+						<div class="header-block__lable">Top Selling</div>
+						<h2 class="header-block__header">Top Destinations</h2>
+					</div>
+					<div class="destination__items">
+						<div class="destination__item item-destination">
+							<div class="item-destination__picture-ibg">
+								<picture><source srcset="img/destination/01.webp" type="image/webp"><img src="img/destination/01.jpg" alt=""></picture>
+							</div>
+							<div class="item-destination__body">
+								<div class="item-destination__location">Rome, Italty</div>
+								<div class="item-destination__price">$5,42k</div>
+								<div class="item-destination__trip _icon-arrow_fly">10 Days Trip</div>
+							</div>
+						</div>
+						<div class="destination__item item-destination">
+							<div class="item-destination__picture-ibg">
+								<picture><source srcset="img/destination/02.webp" type="image/webp"><img src="img/destination/02.jpg" alt=""></picture>
+							</div>
+							<div class="item-destination__body">
+								<div class="item-destination__location">London, UK</div>
+								<div class="item-destination__price">$4.2k</div>
+								<div class="item-destination__trip _icon-arrow_fly">12 Days Trip</div>
+							</div>
+						</div>
+						<div class="destination__item item-destination">
+							<div class="item-destination__picture-ibg">
+								<picture><source srcset="img/destination/03.webp" type="image/webp"><img src="img/destination/03.jpg" alt=""></picture>
+							</div>
+							<div class="item-destination__body">
+								<div class="item-destination__location">Full Europe</div>
+								<div class="item-destination__price">$15k</div>
+								<div class="item-destination__trip _icon-arrow_fly">28 Days Trip</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__book book">
+				<div class="book__container">
+					<div class="book__content content-book">
+						<div class="content-book__header header-block">
+							<div class="header-block__lable">Easy and Fast</div>
+							<h2 class="header-block__header">Book your next trip
+								in 3 easy steps</h2>
+						</div>
+						<div class="content-book__items">
+							<div class="content-book__item">
+								<div class="content-book__img content-book__img_1">
+									<img src="img/book/icon/01.svg" alt="">
+								</div>
+								<a href="" class="content-book__text">
+									<div class="content-book__label">Choose Destination</div>
+									<div class="content-book__content">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Urna, tortor tempus. </div>
+								</a>
+							</div>
+							<div class="content-book__item">
+								<div class="content-book__img content-book__img_2">
+									<img src="img/book/icon/02.svg" alt="">
+								</div>
+								<a href="" class="content-book__text">
+									<div class="content-book__label">Make Payment</div>
+									<div class="content-book__content">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Urna, tortor tempus.</div>
+								</a>
+							</div>
+							<div class="content-book__item">
+								<div class="content-book__img content-book__img_3">
+									<img src="img/book/icon/03.svg" alt="">
+								</div>
+								<a href="" class="content-book__text">
+									<div class="content-book__label">Reach Airport on Selected Date</div>
+									<div class="content-book__content">Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Urna, tortor tempus. </div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="book__picture picture-book">
+						<div class="picture-book__block">
+							<div class="picture-book__img">
+								<picture><source srcset="img/book/greece.webp" type="image/webp"><img src="img/book/greece.jpg" alt=""></picture>
+							</div>
+							<div class="picture-book__content">
+								<h3 class="picture-book__header">Trip To Greece</h3>
+								<div class="picture-book__info">
+									<div class="picture-book__data">14-29 June</div>
+									<div class="picture-book__name">by Robbin joseph</div>
+								</div>
+								<div class="picture-book__actions actions-picture-book">
+									<div class="actions-picture-book__leaf _icon-leaf1"></div>
+									<div class="actions-picture-book__book _icon-book"></div>
+									<div class="actions-picture-book__fly _icon-fly"></div>
+								</div>
+								<div class="picture-book__going going-picture-book">
+									<div class="going-picture-book__people">24 people going</div>
+									<button type="button" data-tippy-ongoing class="going-picture-book__heart _icon-heart"></button>
+								</div>
+							</div>
+						</div>
+						<div class="picture-book">
+							<div id="ongoing" class="ongoing-picture-book">
+								<div class="ongoing-picture-book__img">
+									<picture><source srcset="img/book/rome.webp" type="image/webp"><img src="img/book/rome.jpg" alt=""></picture>
+								</div>
+								<div class="ongoing-picture-book__content">
+									<div class="ongoing-picture-book__title">Ongoing</div>
+									<h3 class="ongoing-picture-book__header">Trip to rome</h3>
+									<div class="ongoing-picture-book__text"><span>40%</span> completed</div>
+									<div class="ongoing-picture-book__line">
+										<span style="width:40%;"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="page__testimonials testimonials">
+				<div class="testimonials__container">
+					<div class="testimonials__content">
+						<div class="testimonials__header header-block">
+							<div class="header-block__lable">Testimonials</div>
+							<h2 class="header-block__header">What people say about Us.</h2>
+						</div>
+						<div data-da=".testimonials__body, 991.98" class="testimonials__gotts"></div>
+					</div>
+					<div class="testimonials__body">
+						<!-- Оболочка слайдера -->
+						<div class="testimonials__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<div class="testimonials__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="testimonials__slide swiper-slide">
+									<div class="slide-testimonials">
+										<div class="slide-testimonials__avatar">
+											<img src="img/test/ava01.svg" alt="Ava">
+										</div>
+										<div class="slide-testimonials__text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</div>
+										<div class="slide-testimonials__name">Mike taylor</div>
+										<div class="slide-testimonials__position">Lahore, Pakistan</div>
+									</div>
+								</div>
+								<div class="testimonials__slide swiper-slide">
+									<div class="slide-testimonials">
+										<div class="slide-testimonials__avatar">
+											<img src="img/test/ava01.svg" alt="Ava">
+										</div>
+										<div class="slide-testimonials__text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus consequatur magnam natus dolores fugiat velit, a quaerat aspernatur magni ullam eum recusandae maxime eveniet quasi quidem numquam repellendus. Praesentium!”</div>
+										<div class="slide-testimonials__name">Mike taylor</div>
+										<div class="slide-testimonials__position">Lahore, Pakistan</div>
+									</div>
+								</div>
+								<div class="testimonials__slide swiper-slide">
+									<div class="slide-testimonials">
+										<div class="slide-testimonials__avatar">
+											<img src="img/test/ava01.svg" alt="Ava">
+										</div>
+										<div class="slide-testimonials__text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</div>
+										<div class="slide-testimonials__name">Mike taylor</div>
+										<div class="slide-testimonials__position">Lahore, Pakistan</div>
+									</div>
+								</div>
+								<div class="testimonials__slide swiper-slide">
+									<div class="slide-testimonials">
+										<div class="slide-testimonials__avatar">
+											<img src="img/test/ava01.svg" alt="Ava">
+										</div>
+										<div class="slide-testimonials__text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus consequatur magnam natus dolores fugiat velit, a quaerat aspernatur magni ullam eum recusandae maxime eveniet quasi quidem numquam repellendus. Praesentium!”</div>
+										<div class="slide-testimonials__name">Mike taylor</div>
+										<div class="slide-testimonials__position">Lahore, Pakistan</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Если нужна навигация (влево/вправо) -->
+						<div class="testimonials__arrows">
+							<button type="button" class="testimonials__arrow swiper-button-prev _icon-slider-arrow"></button>
+							<button type="button" class="testimonials__arrow swiper-button-next _icon-slider-arrow"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__client client">
+				<div class="client__container">
+					<a href="" class="client__img">
+						<img src="img/client/01.svg" alt="logo">
+					</a>
+					<a href="" class="client__img">
+						<img src="img/client//02.svg" alt="logo">
+					</a>
+					<a href="" class="client__img">
+						<img src="img/client/03.svg" alt="logo">
+					</a>
+					<a href="" class="client__img">
+						<img src="img/client/04.svg" alt="logo">
+					</a>
+					<a href="" class="client__img">
+						<img src="img/client/05.svg" alt="logo">
+					</a>
+				</div>
+			</div>
+			<section class="page__subscribe subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__body">
+						<h3 class="subscribe__header">Subscribe to get information, latest news and other
+							interesting offers about Jadoo</h3>
+						<form data-dev data-popup-message="#popup-message" metod="GET" class="subscribe__form form-subscribe">
+							<div class="form-subscribe__input _icon-email">
+								<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your email" class="input">
+							</div>
+							<button type="submit" class="form-subscribe__button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__info">
+					<div class="footer__logo">Jadoo.</div>
+					<div class="footer__text">
+						<p>Book your trip in minute, get full</p>
+						<p>Control for much longer.</p>
+					</div>
+				</div>
+				<nav data-spollers="600,max" class="footer__menu menu-footer">
+					<div class="menu-footer__column">
+						<button type="button" data-spoller class="menu-footer__title">Company</button>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">About</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Careers</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Mobile</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-footer__column">
+						<button data-spoller type="button" class="menu-footer__title">Contact</button>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Help/FAQ</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Press</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Affilates</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-footer__column">
+						<button data-spoller type="button" class="menu-footer__title">More</button>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Airlinefees</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Airline</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="" class="menu-footer__link">Low fare tips</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="footer__social social-footer">
+					<div class="social-footer__icons">
+						<a href="" class="social-footer__icon _icon-Fb"></a>
+						<a href="" class="social-footer__icon _icon-inst"></a>
+						<a href="" class="social-footer__icon _icon-twit"></a>
+					</div>
+					<div class="social-footer__app">
+						<div class="social-footer__title">Discover our app</div>
+						<div class="social-footer__link">
+							<a href="" class="social-footer__gplay">
+								<picture><source srcset="img/footer/gp.webp" type="image/webp"><img src="img/footer/gp.jpg" alt=""></picture>
+							</a>
+							<a href="" class="social-footer__pstore">
+								<picture><source srcset="img/footer/ps.webp" type="image/webp"><img src="img/footer/ps.jpg" alt=""></picture>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copy">All rights reserved@jadoo.co</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div data-youtube-place class="popup__text">Email was send</div>
+			</div>
 		</div>
 	</div>
+	<script src="js/app.min.js?_v=20220624232409"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
